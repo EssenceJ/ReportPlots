@@ -44,7 +44,8 @@ def two_axis_plot(data, fileName, x, y, fig_title, x_label, y_label, ch):
     # Save file
 
     # print(fileName[15:14])
-    naming_conv = (fileName[15:14] + '_CH' + channel + '_' + x_label + '_' + y_label)  # Naming convention: Channel_file name_columns
+    naming_conv = (fileName[
+                   15:14] + '_CH' + channel + '_' + x_label + '_' + y_label)  # Naming convention: Channel_file name_columns
     # saved = (saved_path + '\CH_' + channel + '_' + fileName + '_' + x_label + '_' + y_label)  # Naming convention: Channel_file name_columns
     # saved = saved_path
     fig.savefig(naming_conv, bbox_inches="tight")
@@ -105,7 +106,8 @@ def multi_axes_plots(data, fileName, x, y1, y2, y3, fig_title, x_label, y1_label
     # plt.show()#method for displaying plot
     # Save file
 
-    saved = (saved_path + channel + '_' + fileName + '_' + x_label + '_' + y1_label + '_' + y2_label + '_' + y3_label)  # Naming convention: Channel_file name_columns
+    saved = (
+                saved_path + channel + '_' + fileName + '_' + x_label + '_' + y1_label + '_' + y2_label + '_' + y3_label)  # Naming convention: Channel_file name_columns
     fig.savefig(saved, bbox_inches="tight")
     fig.close()
 
